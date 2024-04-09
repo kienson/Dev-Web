@@ -33,7 +33,7 @@ body {
 
 #headright{
   text-align: center;
-  position: relative;
+  position: absolute;
   width:25%;
   right: 0%;
 
