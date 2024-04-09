@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Categorie>
+    <PUI id="01">
+        <carte>
+            <nom>Gogeta SSJ Blue</nom>
+            <image onclick="openImage(this.id)">../img/gogetaBlue.jpeg</image>
+            <prix>97</prix>
+            <quantité>20</quantité>
+            <reference>001</reference>
+            <code>p001</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Son Gohan SSJ (Futur)</nom>
+            <image onclick="openImage(this.id)">../img/gohanFutur.jpg</image>
+            <prix>130</prix>
+            <quantité>20</quantité>
+            <reference>002</reference>
+            <code>p002</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Son Gohan (enfant) et Piccolo</nom>
+            <image onclick="openImage(this.id)">../img/gohanPiccolo.webp</image>
+            <prix>68</prix>
+            <quantité>50</quantité>
+            <reference>003</reference>
+            <code>p003</code>
+            <edition>UR</edition>
+        </carte>
+        <carte>
+            <nom>Gamma 1</nom>
+            <image onclick="openImage(this.id)">../img/gamma1.jpg</image>
+            <prix>24</prix>
+            <quantité>50</quantité>
+            <reference>004</reference>
+            <code>p004</code>
+            <edition>UR</edition>
+        </carte>
+        <carte>
+            <nom>Cooler (forme finale)</nom>
+            <image onclick="openImage(this.id)">../img/coolerFinale.jpg</image>
+            <prix>95</prix>
+            <quantité>20</quantité>
+            <reference>005</reference>
+            <code>p005</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Super Vegeta</nom>
+            <image onclick="openImage(this.id)">../img/superVegeta.webp</image>
+            <prix>20</prix>
+            <quantité>50</quantité>
+            <reference>006</reference>
+            <code>p006</code>
+            <edition>UR</edition>
+        </carte>
+    </PUI>
+
+
+    <AGI id="02">
+        <carte>
+            <nom>Bardock</nom>
+            <image onclick="openImage(this.id)">../img/bardock.webp</image>
+            <prix>20</prix>
+            <quantité>50</quantité>
+            <reference>007</reference>
+            <code>a007</code>
+            <edition>UR</edition>
+        </carte>
+        <carte>
+            <nom>Oméga Shenron</nom>
+            <image onclick="openImage(this.id)">../img/omegaShenron.jpg</image>
+            <prix>100</prix>
+            <quantité>20</quantité>
+            <reference>008</reference>
+            <code>a008</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Gamma 2</nom>
+            <image onclick="openImage(this.id)">../img/gamma2.webp</image>
+            <prix>25</prix>
+            <quantité>50</quantité>
+            <reference>009</reference>
+            <code>a009</code>
+            <edition>UR</edition>
+        </carte>
+        <carte>
+            <nom>Vegetto SSJ Blue</nom>
+            <image onclick="openImage(this.id)">../img/vegettoBlue.jpg</image>
+            <prix>155</prix>
+            <quantité>20</quantité>
+            <reference>010</reference>
+            <code>a010</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Ginyu</nom>
+            <image onclick="openImage(this.id)">../img/ginyu.webp</image>
+            <prix>20</prix>
+            <quantité>50</quantité>
+            <reference>011</reference>
+            <code>a011</code>
+            <edition>UR</edition>
+        </carte>
+        <carte>
+            <nom>Vegeta SSJ4</nom>
+            <image onclick="openImage(this.id)">../img/vegetaSsj4.webp</image>
+            <prix>10</prix>
+            <quantité>100</quantité>
+            <reference>012</reference>
+            <code>a012</code>
+            <edition>SSR</edition>
+        </carte>
+    </AGI>
+
+    <END id="03">
+        <carte>
+            <nom>Buu (Gotenks absorbé)</nom>
+            <image onclick="openImage(this.id)">../img/buutenks.webp</image>
+            <prix>14</prix>
+            <quantité>100</quantité>
+            <reference>013</reference>
+            <code>e013</code>
+            <edition>SSR</edition>
+        </carte>
+        <carte>
+            <nom>Gogeta SSJ4</nom>
+            <image onclick="openImage(this.id)">../img/gogetaSsj4.jpg</image>
+            <prix>85</prix>
+            <quantité>19</quantité>
+            <reference>014</reference>
+            <code>e014</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Son Gohan (Ultime)</nom>
+            <image onclick="openImage(this.id)">../img/gohanUltime.webp</image>
+            <prix>75</prix>
+            <quantité>19</quantité>
+            <reference>015</reference>
+            <code>e015</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Son Goku SSJ God</nom>
+            <image onclick="openImage(this.id)">../img/gokuGod.webp</image>
+            <prix>40</prix>
+            <quantité>18</quantité>
+            <reference>016</reference>
+            <code>e016</code>
+            <edition>SSR</edition>
+        </carte>
+        <carte>
+            <nom>Broly SSJ (Full Power)</nom>
+            <image onclick="openImage(this.id)">../img/brolySsjBerseker.png</image>
+            <prix>29</prix>
+            <quantité>50</quantité>
+            <reference>017</reference>
+            <code>e017</code>
+            <edition>UR</edition>
+        </carte>
+        <carte>
+            <nom>Métal Cooler</nom>
+            <image onclick="openImage(this.id)">../img/metalCooler.webp</image>
+            <prix>5</prix>
+            <quantité>100</quantité>
+            <reference>018</reference>
+            <code>e018</code>
+            <edition>SSR</edition>
+        </carte>
+    </END>
+    <INT id="04">
+        <carte>
+            <nom>Black Goku SSJ Rosé</nom>
+            <image onclick="openImage(this.id)">../img/black.png</image>
+            <prix>65</prix>
+            <quantité>20</quantité>
+            <reference>019</reference>
+            <code>i019</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Buu (Gohan absorbé)</nom>
+            <image onclick="openImage(this.id)">../img/buuhan.webp</image>
+            <prix>12</prix>
+            <quantité>50</quantité>
+            <reference>020</reference>
+            <code>i020</code>
+            <edition>UR</edition>
+        </carte>
+        <carte>
+            <nom>Son Goku SSJ4 (Full Power)</nom>
+            <image onclick="openImage(this.id)">../img/gokuSsj4.jpg</image>
+            <prix>105</prix>
+            <quantité>18</quantité>
+            <reference>021</reference>
+            <code>i021</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Piccolo Junior</nom>
+            <image onclick="openImage(this.id)">../img/piccoloJunior.webp</image>
+            <prix>80</prix>
+            <quantité>50</quantité>
+            <reference>022</reference>
+            <code>i022</code>
+            <edition>UR</edition>
+        </carte>
+        <carte>
+            <nom>Zamasu (fusionné)</nom>
+            <image onclick="openImage(this.id)">../img/zamasu.png</image>
+            <prix>25</prix>
+            <quantité>98</quantité>
+            <reference>023</reference>
+            <code>i023</code>
+            <edition>SSR</edition>
+        </carte>
+        <carte>
+            <nom>Majin Vegeta</nom>
+            <image onclick="openImage(this.id)">../img/majinVegeta.webp</image>
+            <prix>17</prix>
+            <quantité>100</quantité>
+            <reference>024</reference>
+            <code>i024</code>
+            <edition>SSR</edition>
+        </carte>
+    </INT>
+    <TEC id="05">
+        <carte>
+            <nom>Black Goku</nom>
+            <image onclick="openImage(this.id)">../img/black.webp</image>
+            <prix>25</prix>
+            <quantité>20</quantité>
+            <reference>025</reference>
+            <code>t025</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Son Goku SSJ</nom>
+            <image onclick="openImage(this.id)">../img/gokuSsj.png</image>
+            <prix>79</prix>
+            <quantité>20</quantité>
+            <reference>026</reference>
+            <code>t026</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Piccolo (puissance éveillée)</nom>
+            <image onclick="openImage(this.id)">../img/piccolo.jpg</image>
+            <prix>72</prix>
+            <quantité>20</quantité>
+            <reference>027</reference>
+            <code>t027</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Son Goku SSJ God et Vegeta SSJ God</nom>
+            <image onclick="openImage(this.id)">../img/gokuVegeta.jpg</image>
+            <prix>45</prix>
+            <quantité>50</quantité>
+            <reference>028</reference>
+            <code>t028</code>
+            <edition>UR</edition>
+        </carte>
+        <carte>
+            <nom>Super Gogeta</nom>
+            <image onclick="openImage(this.id)">../img/superGogeta.jpg</image>
+            <prix>33</prix>
+            <quantité>20</quantité>
+            <reference>029</reference>
+            <code>t029</code>
+            <edition>LR</edition>
+        </carte>
+        <carte>
+            <nom>Son Gohan (adolescent) SSJ2</nom>
+            <image onclick="openImage(this.id)">../img/gohanSsj2.jpg</image>
+            <prix>17</prix>
+            <quantité>50</quantité>
+            <reference>030</reference>
+            <code>t030</code>
+            <edition>UR</edition>
+        </carte>
+    </TEC>
+</Categorie>

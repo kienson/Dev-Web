@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nous contacter</title>
+  <meta charset="utf-8">
+  <link href="../css/teste.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<?php
+    session_start();
+    ?>
+
+<?php include("header.php");?>
+
+
+  <?php include("menu_left.php");?>
+
+
+    <div id="droite">
+        <div style="text-align:center;">
+            <p>Timothée DUPRÉ LA TOUR</p>
+            <p>duprelatou@cy-tech.fr</p>
+            <br>
+            <p>Nahil EL BEZZARI</p>
+            <p>elbezzarin@cy-tech.fr</p>
+            <br>
+            <p>Travis HUA</p>
+            <p>huatravis@cy-tech.fr</p>
+            <br>
+            <p>Rayen MEZNI</p>
+            <p>meznirayen@cy-tech.fr</p>
+        </div>
+  </div>
+  <?php include("footer.html");?>
+
+</body>
+
+
+
+</html>
