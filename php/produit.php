@@ -79,6 +79,10 @@
 <script src="../js/ajoutPan.js"></script>
 <script src="../js/ajouterPanier.js"></script>
 </body>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
 
 
 </html>
