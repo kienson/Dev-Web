@@ -6,9 +6,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  bottom:0%;
   font-family:Trebuchet MS, sans-serif;
   width: 100%;
+	position:absolute;
+	bottom:1px;
 }
 
 footer a{
