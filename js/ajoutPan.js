@@ -43,3 +43,17 @@ $(document).ready(function(){
         }
     })
 })
+
+
+$(document).ready(function(){
+    // Lorsque vous cliquez sur une image
+    $('.Zimg').click(function(){
+        $('#img01').attr('src', $(this).attr('src')); // Change la source de l'image dans la modal
+        $('#myModal').css('display', 'block'); // Affiche la modal
+    });
+
+    // Lorsque vous cliquez sur <span> (x), fermez la modal
+    $('.close').click(function(){
+        $('#myModal').css('display', 'none');
+    });
+});
