@@ -40,7 +40,11 @@ h2 {
 }
 
 footer {
-  background-color:#f9fafa;
+  background-image: url(../img/background.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  box-shadow: 0px 2px 10px #adadad;
   color: #000000;
   text-align: center;
   padding: 20px;
@@ -55,7 +59,12 @@ footer {
 
 footer a{
   font-family:Trebuchet MS, sans-serif;  
-  color: #000000;
+  color: white;
+}
+
+footer p{
+  font-family:Trebuchet MS, sans-serif;  
+  color: white;
 }
 
 body {
@@ -87,6 +96,9 @@ header {
   height: 10%;
   text-align: center;
   background-image: url(../img/background.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
   display: flex;
   justify-content: space-between;
   align-items: center;
