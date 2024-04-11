@@ -20,6 +20,25 @@
         <div style="text-align:center;">
             <p>©CY-Tech</p>
             <p>©DokkanFestival</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
   </div>
   <?php include("footer.html");?>
