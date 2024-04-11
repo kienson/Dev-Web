@@ -33,6 +33,17 @@
             <br>
             <p>Rayen MEZNI</p>
             <p>meznirayen@cy-tech.fr</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
   </div>
   <?php include("footer.html");?>
