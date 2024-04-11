@@ -904,3 +904,8 @@ legend {
     cursor: pointer;
 }
 
+.cartes {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Crée deux colonnes */
+  gap: 50px; /* Espace entre les colonnes */
+}
