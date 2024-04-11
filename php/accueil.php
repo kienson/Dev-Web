@@ -28,6 +28,13 @@
     <h2>Une expérience d'achat fluide et sécurisée</h2>
     <p>Grâce à notre plateforme en ligne sécurisée, vous pouvez effectuer vos achats en toute tranquillité. Nous nous engageons à vous livrer rapidement vos cartes virtuelles afin que vous puissiez les utiliser dès que possible dans vos parties.
     Rejoignez dès maintenant notre communauté de joueurs passionnés et boostez votre équipe pour devenir le meilleur combattant de l'univers Dragon Ball Z !  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     </p>
   </div>
   <?php include("footer.html");?>
