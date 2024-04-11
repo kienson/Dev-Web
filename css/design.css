@@ -1,5 +1,8 @@
 footer {
-  background-color:#f9fafa;
+  background-image: url(../img/background.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
   color: #000000;
   text-align: center;
   padding: 20px;
@@ -12,9 +15,9 @@ footer {
 	bottom:0%;
 }
 
-footer a{
+footer a p{
   font-family:Trebuchet MS, sans-serif;  
-  color: #000000;
+  color:white;
 }
 
 body {
@@ -46,6 +49,9 @@ header {
   height: 10%;
   text-align: center;
   background-image: url(../img/background.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
   display: flex;
   justify-content: space-between;
   align-items: center;
