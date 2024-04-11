@@ -15,9 +15,14 @@ footer {
 	bottom:0%;
 }
 
-footer a p{
+footer a{
   font-family:Trebuchet MS, sans-serif;  
   color:white;
+}
+
+footer p{
+  font-family:Trebuchet MS, sans-serif;  
+  color: white;
 }
 
 body {
