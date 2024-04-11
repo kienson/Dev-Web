@@ -53,7 +53,7 @@
 
                 <div class="bottom">
                     <div class="info">Edition <?php echo $v->edition?></div>
-                    <div class="style">Type: Feu / Ref: <?php echo $v->reference; ?></div>
+                    <div class="style"> Ref: <?php echo $v->reference; ?></div>
                     <div class="price"><?php echo $v->prix?> € (HT) </div>
                     <div id="selec" class=<?php echo $v->reference;?>>
                         <?php
