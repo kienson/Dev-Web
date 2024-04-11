@@ -21,13 +21,13 @@ session_start();
 
 <?php include("header.php");?>
 
-  <div id="milieu">
+  <div id="po">
 
-    <div id="votre">
+    <div id="copo">
       <p>Votre commande :</p>
     </div>
 
-    <div id="ticket">
+    <div id="tick">
     <table>
     <thead>
         <tr>
