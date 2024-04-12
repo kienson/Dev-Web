@@ -68,7 +68,7 @@
                         }
                         ?>
                     </div>
-                    <div class ="affStock" id="<?php echo $v->quantité;?>">Stock</div>
+                    <div class ="affStock" id="<?php echo $v->quantité;?>">Disponibilités</div>
                 </div>
 
             </div>
