@@ -47,7 +47,7 @@
                             unset($img,$nom,$prix);
                         endforeach;}
                         else {
-                            echo "<div style='padding:20px; text-align:center;'><p>Votre panier est vide</p></div>";
+                            echo "<div style='padding:20px; text-align:center; margin-bottom:400px;'><p>Votre panier est vide</p></div>";
                         }
                         ?>
                 </div>
