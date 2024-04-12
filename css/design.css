@@ -280,27 +280,28 @@ th{
 #moins{
   font-family:Trebuchet MS,sans-serif;
   border-radius: 8px;
-  color : black;
-  background-color:#F5F5DC;
+  color : white;
+  background-color:#100e6b;
   box-shadow: 0 2px 55px rgba(0, 0, 0, 0.068);
-  border:solid black 1px;
+  border:solid white 1px;
   padding:3%;
 }
 
 #moins:hover
 {
-  color : #F5F5DC;
-  background-color:black;
+  color : #030227;
+  background-color:white;
   transition:0.2s;
+  border:solid black 1px;
 }
 
 #ajtpan{
   font-family:Trebuchet MS,sans-serif;
   font-size: 17px;
   border-radius: 8px;
-  color : black;
-  background-color:#F5F5DC;
-  border:solid black 1px;
+  color : white;
+  background-color:#100e6b;
+  border:solid white 1px;
 }
 
 #quant{
@@ -315,43 +316,46 @@ th{
 
 #ajtpan:hover
 {
-  color : #F5F5DC;
-  background-color:black;
+  color : #030227;
+  background-color:white;
   transition:0.2s;
+  border:solid black 1px;
 }
 
 #plus{
   font-family:Trebuchet MS,sans-serif;
   border-radius: 8px;
-  color : black;
-  background-color:#f5f5dc;
+  color : white;
+  background-color:#100e6b;
   box-shadow: 0 2px 55px rgba(0, 0, 0, 0.068);
-  border:solid black 1px;
+  border:solid white 1px;
   padding:3%;
 }
 
 #plus:hover
 {
-  color : #F5F5DC;
-  background-color:black;
+  color : #030227;
+  background-color:white;
   transition:0.2s;
+  border:solid black 1px;
 }
 
 .affStock{
   font-family:Trebuchet MS,sans-serif;
   border-radius: 8px;
-  color : black;
-  background-color:#f5f5dc;
+  color : white;
+  background-color:#100e6b;
   box-shadow: 0 2px 55px rgba(0, 0, 0, 0.068);
-  border:solid black 1px;
+  border:solid white 1px;
   padding:3%;
 }
 
 .affStock:hover
 {
-  color : #F5F5DC;
-  background-color:black;
+  color : #030227;
+  background-color:white;
   transition:0.2s;
+  border:solid black 1px;
 }
 
 
