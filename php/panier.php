@@ -56,7 +56,6 @@
                 echo '
                 <div id="pandown">
                     <button id="supp">Vider le panier</button>
-                    <div id="total"><p>Total(TTC) : ',$total*1.2,'€</p></div>
                     <button id="confAchat">Confirmer le panier</button>
                 </div>';}
                 ?>
