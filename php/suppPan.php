@@ -1,23 +1,17 @@
 <?php
 
-session_start();   
+include("start.php");
 
-$xml = simplexml_load_file('../data/Stock.xml');
-foreach($_SESSION['tab'] as $v) :
-    foreach($xml as $t):
-        foreach($t->carte as $w) :
-            if($v[0]==$w->reference){
-              $w->quantité=$w->quantité+$v[1];
-  
-        }
-        endforeach;
-    endforeach;
-  endforeach;
-$xml->asXML('../data/Stock.xml');
 
-unset($_SESSION['tab']);
+$sql = "SELECT idArticle, quantite FROM Paniers";
+$result = $conn->query($sql);
+while ($row = $result->fetch_assoc()):
+    $quantite = $row['quantite'];
+    $sql = "UPDATE Cartes SET quantite = quantite +  $quantite  WHERE id =  '".$row['idArticle']."' ";
+    $conn->query($sql);
+endwhile;
 
-$stat='ok';
-echo json_encode(['stat' => $stat]);
+$sql = "DELETE FROM Paniers";
+$conn->query($sql);
 
 ?>

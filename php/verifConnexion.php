@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+include("start.php");
 
 
 if($_SESSION['ok']==1){

@@ -1,42 +1,23 @@
 <?php
 
-session_start();   
+include("start.php");
 
-$ref=$_GET['ref'];
-$quant=$_GET['quant'];
+$ref = $_GET['ref'];
+$quant = $_GET['quant'];
 
-$tab[0] = $ref;
-$tab[1] = $quant;
 
-if ($quant != 0){
-    $xml = simplexml_load_file('../data/Stock.xml');
-            foreach($xml as $t):
-                foreach($t->carte as $w) :
-                    if($tab[0]==$w->reference){
-                        $w->quantité=$w->quantité-$tab[1];
-                    }
-                endforeach;
-            endforeach;
-        $xml->asXML('../data/Stock.xml');
-    $estvide=empty($_SESSION['tab']);
-    if($estvide != 0){
-        $_SESSION['tab'][0]=$tab;
-    }
-    else{
-        $nbr = count($_SESSION['tab']);
-        for($i=0;$i<$nbr;$i++){
-            if ($_SESSION['tab'][$i][0] == $tab[0]){
-                $tab[1]=$tab[1]+$_SESSION['tab'][$i][1];
-                unset($_SESSION['tab'][$i]);
-            }
-        }
-        $_SESSION['tab'][$nbr]=$tab;
-    }
+$sql = "SELECT id, quantite FROM Cartes WHERE reference = '" . $ref . "'";
+$result = $conn->query($sql);
+$idstock = $result->fetch_assoc();
+
+
+if ($quant != 0 && $quant<=$idstock['quantite']) {
+    // Mettre à jour la quantité dans la base de données SQL
+    $sql = "UPDATE Cartes SET quantite = quantite - $quant WHERE reference = $ref";
+    $conn->query($sql);
+
+    $sql = "INSERT INTO Paniers VALUES (DEFAULT,'1','".$idstock['id']."','".$quant."')";
+    $conn->query($sql);
 }
-
-
-$stat=$ref;
-
-echo json_encode(['stat' => $stat]);
 
 ?>

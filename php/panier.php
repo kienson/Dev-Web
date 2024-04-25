@@ -11,57 +11,62 @@
 <body>
 
     <?php
-    session_start();
+    include("start.php");
     ?>
-<?php include("header.php");?>
+    <?php include("header.php");?>
     <?php include("menu_left.php");?>
-        <div id="droite">
-            <div id="milpan">
-                <div id="panup">
-                        <?php 
-                        $xml = simplexml_load_file('../data/Stock.xml');
-                        $total=0;
-                        if (empty($_SESSION['tab'])==0){
-                        foreach($_SESSION['tab'] as $v) :
-                            foreach($xml as $t):
-                                foreach($t->carte as $w) :
-                                    if($v[0]==$w->reference){
-                                        $img=$w->image;
-                                        $nom=$w->nom;
-                                        $prix=$w->prix;
-                                        $total=$prix+$total;
-                                }
-                                endforeach;
-                            endforeach;
-                            echo 
-                            '<div class="entite">
-                                <div class="im"><img style="height:80%;" src="'.$img.'"/></div>
-                                <div class="nm"><p>'.$nom.'</p></div>
-                                <div class="sk"><p>Quantité : </p><p>'.$v[1].'</p></div>
-                                <div class="sk"><p>Prix(TTC) : </p><p>'.$prix*1.2*$v[1].'€</p></div>
-                                <div class="controle">
-                                    <button class="moins" id="moins" onclick="reduire(this)">-</button>
-                                    <button class="plus" id="plus" onclick="augmenter(this)">+</button>
-                                </div>
-                            </div>';
-                            unset($img,$nom,$prix);
-                        endforeach;}
-                        else {
-                            echo "<div style='padding:20px; text-align:center; margin-bottom:400px;'><p>Votre panier est vide</p></div>";
-                        }
-                        ?>
-                </div>
+    <div id="droite">
+        <div id="milpan">
+            <div id="panup">
                 <?php 
-                if (empty($_SESSION['tab'])==0){
-                echo '
-                <div id="pandown">
-                    <button id="supp">Vider le panier</button>
-                    <button id="confAchat">Confirmer le panier</button>
-                </div>';}
+                $total = 0;
+                $iter = 0;
+                $result = $conn->query("SELECT * FROM Paniers");
+                
+                while ($v = $result->fetch_assoc()) :
+                    $col = $conn->query("SELECT * FROM Cartes WHERE Cartes.id = '".$v['idArticle']."'");
+                    $row = $col->fetch_assoc();
+                    $iter = $iter + 1;
+                    $img = $row['image'];
+                    $nom = $row['nom'];
+                    $prix = $row['prix'];
+                    $total += $prix * 1.2 * $v['quantite'];
+
+                    echo '
+                    <div class="entite">
+                    <div class="im"><img style="height:80%;" src="'.$img.'"/></div>
+                    <div class="nm"><p>'.$nom.'</p></div>
+                    <div class="sk"><p>Quantité : </p><p>'.$v['quantite'].'</p></div>
+                    <div class="sk"><p>Prix(TTC) : </p><p>'.($prix * 1.2 * $v['quantite']).'€</p></div>
+                    <div class="controle">
+                            <button class="moins" onclick="reduire(this, '.$row['reference'].')">-</button>
+                            <button class="plus" onclick="augmenter(this, '.$row['reference'].')">+</button>
+                    </div>
+                    </div>';
+
+                    endwhile;
+                if ($iter == 0) {
+                    echo "<div style='padding:20px; text-align:center;margin-right:10%;'><p>Votre panier est vide</p></div>";
+                } 
                 ?>
             </div>
+            <?php 
+            if ($iter!=0) {
+                echo '
+                <div id="pandown">
+                    <button id="supp" onclick="viderPanier()">Vider le panier</button>
+                    <div id="total"><p>Total(TTC) : '.$total.'€</p></div>
+                    <button id="confAchat" onclick="confirmerPanier()">Confirmer le panier</button>
+                </div>';
+            }
+            ?>
         </div>
-    <?php include("footer.html");?>
+    </div>
+
+    <footer>
+        <?php include("footer.html"); ?>
+    </footer>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="../js/modifPan.js"></script>

@@ -16,7 +16,9 @@
 <body>
 
 <?php
-session_start();
+include("start.php");
+
+$total = 0;
 ?>
 
 <?php include("header.php");?>
@@ -41,29 +43,28 @@ session_start();
       </thead>
       <tbody>
       <?php
-$xml = simplexml_load_file('../data/Stock.xml');
-$total=0;
-foreach($_SESSION['tab'] as $v) :
-  foreach($xml as $t):
-      foreach($t->carte as $w) :
-          if($v[0]==$w->reference){
-            echo '
-            <tr>
-              <td>'.$w->nom.'</td>
-              <td>'.$w->reference.'</td>
-              <td>'.$w->prix.'€</td>
-              <td>',($w->prix)*1.2,'€</td>
-              <td>'.$v[1].'</td>
-              <td>',$w->prix*$v[1]*1.2,'€</td>
-            </tr>';
-            $total=$total+$w->prix*$v[1];
+        $result = $conn->query("SELECT * FROM Paniers");
+        while ($v = $result->fetch_assoc()) :
+            $sql = "SELECT * FROM Cartes, Paniers WHERE Cartes.id = '".$v['idArticle']."'";
+            $result = $conn->query($sql);
 
-      }
-      endforeach;
-  endforeach;
-endforeach;
-echo '<tr><td></td><td></td><td></td><td></td><td>Total(HT) : '.$total.'€</td><td>Total(TTC) : '.$total*1.2.'€</td></tr>';
-unset($_SESSION['tab']);
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo '
+                    <tr>
+                        <td>' . $row["nom"] . '</td>
+                        <td>' . $row["reference"] . '</td>
+                        <td>' . $row["prix"] . '€</td>
+                        <td>' . ($row["prix"] * 1.2) . '€</td>
+                        <td>' . $v['quantite'] . '</td>
+                        <td>' . ($row["prix"] * $v['quantite'] * 1.2) . '€</td>
+                    </tr>';
+                    $total = $total + $row["prix"] * $v['quantite'];
+                }
+            }
+        endwhile;
+        echo '<tr><td></td><td></td><td></td><td></td><td>Total(HT) : ' . $total . '€</td><td>Total(TTC) : ' . $total * 1.2 . '€</td></tr>';
+        unset($_SESSION['tab']);
 
       ?>
       </tbody>
