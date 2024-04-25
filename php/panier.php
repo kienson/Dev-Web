@@ -39,8 +39,8 @@
                     <div class="sk"><p>Quantité : </p><p>'.$v['quantite'].'</p></div>
                     <div class="sk"><p>Prix(TTC) : </p><p>'.($prix * 1.2 * $v['quantite']).'€</p></div>
                     <div class="controle">
-                            <button class="moins" onclick="reduire(this, '.$row['reference'].')">-</button>
-                            <button class="plus" onclick="augmenter(this, '.$row['reference'].')">+</button>
+                            <button id="moins" class="moins" onclick="reduire(this, '.$row['reference'].')">-</button>
+                            <button id="plus" class="plus" onclick="augmenter(this, '.$row['reference'].')">+</button>
                     </div>
                     </div>';
 
