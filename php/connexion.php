@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "user";
-$password = "Password1!";
+$username = "root";
+$password = "";
 $dbname = "dokkan";
 
 // Créer une connexion
