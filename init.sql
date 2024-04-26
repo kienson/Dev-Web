@@ -35,6 +35,7 @@ CREATE TABLE `Categories` (
 LOCK TABLES `Categories` WRITE;
 
 INSERT INTO `Categories` VALUES ('01','Type PUI'),('02','Type AGI'),('03','Type END'),('04','Type INT'),('05','Type TEC');
+UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `Paniers`;
 
